@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+  <head>
+    <style>
+    body{
+      margin: 0;
+      padding: 0;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    #imatge{
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    .foto{
+      width: 19.7%;
+      cursor: pointer;
+
+    }
+
+    #tot{
+      width: 72%;
+      margin: 0 auto;
+
+    }
+
+    #imgpetit{
+
+    }
+
+li {
+  list-style-type: none;
+  display: inline;
+
+  font-size: 3em;
+  cursor: pointer;
+}
+
+    </style>
+  </head>
+  <body>
+
+    <div id="tot">
+      <img id="imatge" src="snow1.jpg"/>
+        <ul>
+          <li id="enrere">   <  </li>
+          <li id="num"></li>
+          <li id="endavant">  >  </li>
+        </ul>
+    </div>
+
+    <script type="text/javascript" language="javascript">
+      var foto=['snow1.jpg','snow2.jpeg','snow3.jpg','snow4.jpg','snow5.jpg'];
+      var i=0;
+
+      function endavant() {
+      if (i==foto.length-1) {i=0;} else {i++;}
+      document.getElementById('num').innerHTML=i;
+      document.getElementById('imatge').src=foto[i];
+      }
+
+      function enrere() {
+      if (i==0) {i=foto.length-1;} else {i--;}
+      document.getElementById('num').innerHTML=i;
+      document.getElementById('imatge').src=foto[i];
+      }
+
+      document.getElementById('endavant').addEventListener('click',endavant);
+      document.getElementById('enrere').addEventListener('click',enrere);
+
+/*
+
+      var image=document.getElementById('imatge');
+      var foton=document.getElementsByClassName('foto');
+
+
+      function img0(){
+        image.src=foton[0].src;
+
+
+      }
+
+      function img1(){
+        image.src=foton[1].src;
+      }
+
+      function img2(){
+        image.src=foton[2].src;
+      }
+
+      function img3(){
+        image.src=foton[3].src;
+      }
+
+      function img4(){
+        image.src=foton[4].src;
+      }
+
+
+  foton[0].addEventListener('click', img0);
+  foton[1].addEventListener('click', img1);
+  foton[2].addEventListener('click', img2);
+  foton[3].addEventListener('click', img3);
+  foton[4].addEventListener('click', img4);
+
+*/
+    </script>
+  </body>
+</html>
