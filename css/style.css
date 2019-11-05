@@ -1,7 +1,7 @@
 
 body {
   margin:0;
-  background: #eee;
+  background: #f1f1f1;
   color: #555;
   font-family:  Futura,Trebuchet MS,Arial,sans-serif;
 }
@@ -13,6 +13,7 @@ p, p a{
 
 .header{
   position: fixed;
+  z-index: 5;
 }
 .barMenu{
   background: rgba(235, 235, 235, 0.8);
@@ -22,17 +23,18 @@ p, p a{
   display: block;
   width: 2000px;
   position: relative;
+  z-index: 5;
 
 }
 
 .logo{
-  background-color: green;
-  width: 84px;
-  height: 70px;
+  width: 395px;
+  height: 135px;
   float:right;
-  margin-top:-180px;
+  margin-top:-220px;
   margin-right: 22%;
   position: relative;
+  z-index: 5;
 
 }
 
@@ -129,7 +131,7 @@ p, p a{
 }
 #menu li a:hover,
 #menu li a:focus {
-  background: #1ABC9C;
+  background: #6eff76;
   color: #fff;
 }
 
@@ -139,7 +141,20 @@ p, p a{
   max-width: 960px;
   margin: 0 auto;
 }
+.containerService{
+  width: 85%;
+  max-width: 980px;
+  margin: 0 auto;
+  height: 470px;
+}
 
+.containerContact{
+  width: 85%;
+  background: #f1f1f1;
+  max-width: 960px;
+  margin: 0 auto;
+  display: block;
+}
 .containerPalabraColor{
   width: 85%;
   max-width: 960px;
@@ -150,7 +165,7 @@ p, p a{
 
 
 .bloque h2{
-  margin-bottom: 40px;
+  margin: 40px;
 }
 
 .bloque h1{
@@ -165,9 +180,37 @@ p, p a{
   font-size: 16px;
 }
 
+.service{
+  display: block;
+}
+
+.blocService{
+  width: 120px ;
+  height:200px;
+  padding: 18px;
+  float: left;
+
+}
+
+.blocService p{
+  text-align: left;
+  font-size: 14px;
+}
+
+.blocService h3{
+  text-align: left;
+  margin-bottom: 40px;
+}
+
+.iconService{
+  width: 100px;
+  height: auto;
+  margin-left:-2px;
+
+}
+
 .bloque.parallax{
   height: 600px;
-
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -202,8 +245,9 @@ p, p a{
 }
 
 .book{
-    margin: 40px;
+    margin: 60px;
     overflow: hidden;
+    z-index: 1;
 
 }
 
@@ -217,15 +261,17 @@ p, p a{
   position: relative;
   background-repeat: no-repeat;
   background-size: 100%;
+  z-index: 1;
 
 }
 .book ul, li, li a {
   list-style: none;
   display: block;
+  z-index: 1;
 
 }
 .book li a {
-  z-index:1;
+z-index: 1;
   color: #888;
   text-decoration: none;
   transition: all .2s;
@@ -236,4 +282,42 @@ p, p a{
   filter:alpha(opacity=60);
   -moz-opacity:.60;
 
+}
+
+#imgContact{
+  width: 51%;
+
+}
+
+.contact{
+float: right;
+margin-top: 100px;
+margin-right: 80px;
+}
+
+#phone{
+  background-image: url("../img/phone.png");
+  background-repeat: no-repeat;
+  background-size: 50px 50px;
+  background-position: left;
+  line-height: 50px;
+  text-indent: 60px;
+}
+
+#email{
+  background-image: url("../img/email.png");
+  background-repeat: no-repeat;
+  background-size: 50px 50px;
+  background-position: left;
+  line-height: 50px;
+  text-indent: 60px;
+}
+
+#instagram{
+  background-image: url("../img/instagram.png");
+  background-repeat: no-repeat;
+  background-size: 50px 50px;
+  background-position: left;
+  line-height: 50px;
+  text-indent: 60px;
 }

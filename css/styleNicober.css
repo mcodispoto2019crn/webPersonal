@@ -1,0 +1,184 @@
+body{
+  margin: 0 auto;
+  background-color: #f2f2f2;
+  position: relative;
+  color: #555;
+  font-family:  Futura,Trebuchet MS,Arial,sans-serif;
+  width: 1920px;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+
+
+.header{
+  position: fixed;
+}
+.barMenu{
+  background: rgba(235, 235, 235, 0.8);
+  margin: 0 auto;
+  height: 100px;
+  margin-top:-50px;
+  display: block;
+  width: 1920px;
+  position: relative;
+
+}
+
+.logo{
+  width: 395px;
+  height: 135px;
+  float:right;
+  margin-top:-220px;
+  margin-right: 22%;
+  position: relative;
+
+}
+
+/* Important styles */
+#toggleMenu {
+  display: block;
+  width: 28px;
+  height: 30px;
+  margin: 50px auto 10px 150px;
+  position: relative;
+  top:45px;
+}
+
+#toggleMenu span:after,
+#toggleMenu span:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -9px;
+}
+#toggleMenu span:after{
+  top: 9px;
+}
+#toggleMenu span {
+  position: relative;
+  display: block;
+}
+
+#toggleMenu span,
+#toggleMenu span:after,
+#toggleMenu span:before {
+  width: 100%;
+  height: 5px;
+  background-color: #888;
+  transition: all 0.3s;
+  backface-visibility: hidden;
+  border-radius: 2px;
+}
+
+/* on activation */
+#toggleMenu.on span {
+  background-color: transparent;
+}
+#toggleMenu.on span:before {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+#toggleMenu.on span:after {
+  transform: rotate(-45deg) translate(7px, -8px);
+}
+#toggleMenu.on + #menu {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* menu appearance*/
+#menu {
+  position: relative;
+  color: #999;
+  width: 200px;
+  padding: 10px;
+  margin: 50px auto 10px 55px;
+  font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
+  text-align: center;
+  border-radius: 4px;
+  background: white;
+  box-shadow: 0 1px 8px rgba(0,0,0,0.05);
+  /* just for this demo */
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .4s;
+
+}
+#menu:after {
+  position: absolute;
+  top: -15px;
+  left: 95px;
+  content: "";
+  display: block;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 20px solid white;
+}
+#menu ul, li, li a {
+  list-style: none;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+#menu li a {
+  padding: 5px;
+  color: #888;
+  text-decoration: none;
+  transition: all .2s;
+}
+#menu li a:hover,
+#menu li a:focus {
+  background: #1ABC9C;
+  color: #fff;
+}
+
+
+
+#imatge{
+  margin-top: 100px;
+  width:60%;
+  height: auto;
+  margin-left: 18%;
+}
+.overlay {
+  position: absolute;
+  top: -750px;
+  left: 400px;
+  height: 10%;
+  width: 15%;
+  opacity: 0;
+  margin: 0;
+  transition: .5s ease;
+}
+
+.foto{
+  width: 11.48%;
+  cursor: pointer;
+  height: auto;
+}
+
+.foto:hover{
+  opacity:0.5;
+}
+
+.imgpetit:hover .overlay {
+  opacity: 1;
+}
+
+.imgpetit{
+  display: inline;
+  padding: 5px;
+
+}
+
+.container{
+  position: relative;
+  float: left;
+  left: 17.5%;
+  padding: 5px;
+}
+h2{
+  text-align: center;
+  color: #555;
+  font-family:  Futura,Trebuchet MS,Arial,sans-serif;
+}
