@@ -1,4 +1,4 @@
-
+@media only screen and (max-width: 639px){
 body {
   margin:0;
   background: #f1f1f1;
@@ -21,18 +21,18 @@ p, p a{
   height: 100px;
   margin-top:-50px;
   display: block;
-  width: 2000px;
+  width: 640px;
   position: relative;
   z-index: 5;
 
 }
 
 .logo{
-  width: 395px;
-  height: 135px;
+  width: 200px;
+  height: auto;
   float:right;
-  margin-top:-220px;
-  margin-right: 22%;
+  margin-top:-185px;
+  margin-right: 40%;
   position: relative;
   z-index: 5;
 
@@ -43,7 +43,7 @@ p, p a{
   display: block;
   width: 28px;
   height: 30px;
-  margin: 50px auto 10px 150px;
+  margin: 50px auto 10px 80px;
   position: relative;
   top:45px;
 }
@@ -110,7 +110,7 @@ p, p a{
 #menu:after {
   position: absolute;
   top: -15px;
-  left: 95px;
+  left: 25px;
   content: "";
   display: block;
   border-left: 15px solid transparent;
@@ -145,7 +145,7 @@ p, p a{
   width: 85%;
   max-width: 980px;
   margin: 0 auto;
-  height: 470px;
+  height: 1500px;
 }
 
 .containerContact{
@@ -156,7 +156,7 @@ p, p a{
   display: block;
 }
 .containerPalabraColor{
-  width: 85%;
+  width: 50%;
   max-width: 960px;
   margin: 95px;
   margin-left: 25%;
@@ -171,7 +171,7 @@ p, p a{
 .bloque h1{
   text-align: center;
   margin: 0;
-  font-size: 160px;
+  font-size: 60px;
   line-height: 600px;
 }
 
@@ -185,10 +185,11 @@ p, p a{
 }
 
 .blocService{
-  width: 120px ;
+  width: 100px ;
   height:200px;
   padding: 18px;
   float: left;
+  margin-bottom: 260px;
 
 }
 
@@ -285,14 +286,15 @@ z-index: 1;
 }
 
 #imgContact{
-  width: 51%;
+  width: 70%;
+  visibility: hidden;
 
 }
 
 .contact{
 float: right;
-margin-top: 100px;
-margin-right: 80px;
+margin-top: -100px;
+margin-right: -20px;
 }
 
 #phone{
@@ -320,4 +322,330 @@ margin-right: 80px;
   background-position: left;
   line-height: 50px;
   text-indent: 60px;
+}
+}
+
+@media only screen and (min-width: 640px){
+  body {
+    margin:0;
+    background: #f1f1f1;
+    color: #555;
+    font-family:  Futura,Trebuchet MS,Arial,sans-serif;
+  }
+  p, p a{
+    font-size: 12px;
+    text-align: center;
+    color: #888;
+  }
+
+  .header{
+    position: fixed;
+    z-index: 5;
+  }
+  .barMenu{
+    background: rgba(235, 235, 235, 0.8);
+    margin: 0 auto;
+    height: 100px;
+    margin-top:-50px;
+    display: block;
+    width: 2000px;
+    position: relative;
+    z-index: 5;
+
+  }
+
+  .logo{
+    width: 270px;
+    height: auto;
+    float:right;
+    margin-top:-200px;
+    margin-right: 18%;
+    position: relative;
+    z-index: 5;
+
+  }
+
+  /* Important styles */
+  #toggleMenu {
+    display: block;
+    width: 28px;
+    height: 30px;
+    margin: 50px auto 10px 150px;
+    position: relative;
+    top:45px;
+  }
+
+  #toggleMenu span:after,
+  #toggleMenu span:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: -9px;
+  }
+  #toggleMenu span:after{
+    top: 9px;
+  }
+  #toggleMenu span {
+    position: relative;
+    display: block;
+  }
+
+  #toggleMenu span,
+  #toggleMenu span:after,
+  #toggleMenu span:before {
+    width: 100%;
+    height: 5px;
+    background-color: #888;
+    transition: all 0.3s;
+    backface-visibility: hidden;
+    border-radius: 2px;
+  }
+
+  /* on activation */
+  #toggleMenu.on span {
+    background-color: transparent;
+  }
+  #toggleMenu.on span:before {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+  #toggleMenu.on span:after {
+    transform: rotate(-45deg) translate(7px, -8px);
+  }
+  #toggleMenu.on + #menu {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  /* menu appearance*/
+  #menu {
+    position: relative;
+    color: #999;
+    width: 200px;
+    padding: 10px;
+    margin: 50px auto 10px 55px;
+    font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
+    text-align: center;
+    border-radius: 4px;
+    background: white;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.05);
+    /* just for this demo */
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .4s;
+
+  }
+  #menu:after {
+    position: absolute;
+    top: -15px;
+    left: 95px;
+    content: "";
+    display: block;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 20px solid white;
+  }
+  #menu ul, li, li a {
+    list-style: none;
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
+  #menu li a {
+    padding: 5px;
+    color: #888;
+    text-decoration: none;
+    transition: all .2s;
+  }
+  #menu li a:hover,
+  #menu li a:focus {
+    background: #6eff76;
+    color: #fff;
+  }
+
+
+  .container{
+    width: 85%;
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  .containerService{
+    width: 85%;
+    max-width: 980px;
+    margin: 0 auto;
+    height: 470px;
+  }
+
+  .containerContact{
+    width: 85%;
+    background: #f1f1f1;
+    max-width: 960px;
+    margin: 0 auto;
+    display: block;
+  }
+  .containerPalabraColor{
+    width: 85%;
+    max-width: 960px;
+    margin: 95px;
+    margin-left: 25%;
+    font-size: 16pt;
+  }
+
+
+  .bloque h2{
+    margin: 40px;
+  }
+
+  .bloque h1{
+    text-align: center;
+    margin: 0;
+    font-size: 160px;
+    line-height: 600px;
+  }
+
+  .bloque p{
+    margin-bottom: 40px;
+    font-size: 16px;
+  }
+
+  .service{
+    display: block;
+  }
+
+  .blocService{
+    width: 120px ;
+    height:200px;
+    padding: 18px;
+    float: left;
+
+  }
+
+  .blocService p{
+    text-align: left;
+    font-size: 14px;
+  }
+
+  .blocService h3{
+    text-align: left;
+    margin-bottom: 40px;
+  }
+
+  .iconService{
+    width: 100px;
+    height: auto;
+    margin-left:-2px;
+
+  }
+
+  .bloque.parallax{
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+
+  .parallax.photo1{
+
+    height: 710px;
+    background-position: 0% -10%;
+    background-image: url("../img/animation.gif");
+
+
+  }
+  .parallax.photo2{
+    background-position: 50% 50%;
+    background-image: url("../img/servicios.png");
+
+
+  }
+  .parallax.photo3{
+    background-position: 50% 50%;
+    background-image: url("../img/portfolio.png");
+
+
+  }
+  .parallax.photo4{
+    background-position: 50% 50%;
+    background-image: url("../img/contacto.png");
+
+
+  }
+
+  .book{
+      margin: 60px;
+      overflow: hidden;
+      z-index: 1;
+
+  }
+
+  .book img{
+    width: 140px;
+    height:140px;
+    padding:0;
+    margin: 4px;
+    float: left;
+    list-style-type: none;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    z-index: 1;
+
+  }
+  .book ul, li, li a {
+    list-style: none;
+    display: block;
+    z-index: 1;
+
+  }
+  .book li a {
+  z-index: 1;
+    color: #888;
+    text-decoration: none;
+    transition: all .2s;
+  }
+  .book li a:hover,
+  .book li a:focus {
+    opacity: .60;
+    filter:alpha(opacity=60);
+    -moz-opacity:.60;
+
+  }
+
+  #imgContact{
+    width: 51%;
+
+  }
+
+  .contact{
+  float: right;
+  margin-top: 100px;
+  margin-right: 80px;
+  }
+
+  #phone{
+    background-image: url("../img/phone.png");
+    background-repeat: no-repeat;
+    background-size: 50px 50px;
+    background-position: left;
+    line-height: 50px;
+    text-indent: 60px;
+  }
+
+  #email{
+    background-image: url("../img/email.png");
+    background-repeat: no-repeat;
+    background-size: 50px 50px;
+    background-position: left;
+    line-height: 50px;
+    text-indent: 60px;
+  }
+
+  #instagram{
+    background-image: url("../img/instagram.png");
+    background-repeat: no-repeat;
+    background-size: 50px 50px;
+    background-position: left;
+    line-height: 50px;
+    text-indent: 60px;
+  }
 }
