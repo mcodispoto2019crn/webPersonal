@@ -141,6 +141,10 @@ body{
   visibility: hidden;
 
 }
+
+.margintop{
+  margin-top:-220px;
+}
 .overlay {
   position: absolute;
   top: -750px;
