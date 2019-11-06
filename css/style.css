@@ -323,6 +323,13 @@ margin-right: -20px;
   line-height: 50px;
   text-indent: 60px;
 }
+
+#logoCodi{
+
+  left: 120px;
+  position: relative;
+
+}
 }
 
 @media only screen and (min-width: 640px){
@@ -618,7 +625,7 @@ margin-right: -20px;
 
   .contact{
   float: right;
-  margin-top: 100px;
+  margin-top: -100px;
   margin-right: 80px;
   }
 
@@ -647,5 +654,12 @@ margin-right: -20px;
     background-position: left;
     line-height: 50px;
     text-indent: 60px;
+  }
+
+  #logoCodi{
+    top: 225px;
+    left: 500px;
+    position: relative;
+
   }
 }
