@@ -32,7 +32,7 @@ p, p a{
   height: auto;
   float:right;
   margin-top:-185px;
-  margin-right: 40%;
+  margin-right: 50%;
   position: relative;
   z-index: 5;
 
@@ -43,7 +43,7 @@ p, p a{
   display: block;
   width: 28px;
   height: 30px;
-  margin: 50px auto 10px 80px;
+  margin: 50px auto 10px 60px;
   position: relative;
   top:45px;
 }
@@ -110,7 +110,7 @@ p, p a{
 #menu:after {
   position: absolute;
   top: -15px;
-  left: 25px;
+  left: 5px;
   content: "";
   display: block;
   border-left: 15px solid transparent;
@@ -142,8 +142,8 @@ p, p a{
   margin: 0 auto;
 }
 .containerService{
-  width: 85%;
-  max-width: 980px;
+  width: 90%;
+  max-width: 640px;
   margin: 0 auto;
   height: 1500px;
 }
